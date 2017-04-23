@@ -1,0 +1,18 @@
+<!doctype html>
+{% extends "base.html" %}
+<html>
+<head>
+    <title>{% block title %}Application Submitted{% endblock %}</title>
+</head>
+<body>
+{% block header %}Application successful!{% endblock %}
+{% block subheader %}Thank you, {{ first_name }} {{ last_name }}, for your application for the {{ position }} position at CustomKitten. Your minimum salary requirement is {{ "${:,.2f}".format(salary) }}.{% endblock %}
+<br><br>
+{% block jumbo_button %}<a href="/" class="jumbo-button">Return to home page!</a>{% endblock %}
+
+{% block main_contents %}
+{% endblock %}
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+{% extends "base.html" %}
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+    {% block jumbotron_section_class %}<section class="container">{% endblock %}
+        {% block header %}Application Form{% endblock %}
+        {% block subheader %}ALL POSITIONS{% endblock %}
+        {% block jumbo_button %}{% endblock %}
+
+        {% block main_contents %}
+        <div id="instructions" class="col-sm-4">
+            If you are interested in applying to any of the available positions,
+            please fill out the following form and press submit ONLY ONCE. We look forward to your application!
+        </div>
+        <form action="/application-response" class="col-sm-4" method="POST">
+            First name: <input type="text" class="yellow-input" name="first-name"><br>
+            Last name: <input type="text" class="yellow-input" id="last-name" name="last-name"><br>
+            Salary requirement: <input type="number" class="yellow-input" name="salary-req"><br>
+            Select position: <select name="position_choice">
+                {% for position in open_positions %}
+                <option value="{{ position }}">{{ position }}</option>
+                {% endfor %}
+            </select><br>
+            <input type="submit" class="yellow-input" value="Submit"><br>
+        </form>
+        {% endblock %}
+
+
+</body>
+</html>

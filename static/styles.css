@@ -1,0 +1,75 @@
+/* Your CSS goes here */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.jumbotron {
+  text-align: center;
+  background-image: url("/static/homepage-kitten.jpg");
+  height: 500px;
+  background-size: cover;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.jumbotron h1 {
+    font-size: 4em;
+    text-shadow: 0.25px 0.25px 0.25px black;
+}
+
+.jumbotron .header-text {
+    margin: auto;
+    margin-top: 150px;
+    width: 400px;
+    opacity: 1.0;
+}
+
+.sub-header {
+    font-size: 1em;
+    color: #FC4100;
+    text-shadow: 3px white;
+}
+
+.jumbo-button {
+    background-color: #FC4100;
+    font-size: 1.5em;
+    border-radius: 4px;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: 0.25px black;
+}
+
+.hiring:hover {
+    color: #FC4100;
+    background-color: #ffffff;
+}
+
+.container {
+    padding: 10px;
+}
+
+.col-sm-4 {
+    margin-left: 10px;
+}
+
+#instructions {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.yellow-input {
+    background-color: yellow;
+    border-radius: 4px;
+}
+
+#last-name {
+    font-weight: bold;
+}
+
+.app-success {
+    font-size: 3em;
+}
+

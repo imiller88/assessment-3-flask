@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %}PAGE TITLE HERE{% endblock %}</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    {% block jumbotron_section_class %}<section class="jumbotron">{% endblock %}
+        <div class="header-text">
+            <h1>{% block header %}JUMBOTRON HEADER{% endblock %}</h1>
+            <div class="sub-header">
+                {% block subheader %}JUMBOTRON SUBHEADER{% endblock %}
+            </div>
+            <br>
+            {% block jumbo_button %}
+            <a href="/application-form" class="jumbo-button">We're hiring!</a>
+            {% endblock %}
+        </div>
+    {% block jumbotron_section_end %}</section>{% endblock %}
+    {% block main_contents %}CONTENTS HERE{% endblock %}
+
+
+</body>
+</html>
